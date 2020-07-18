@@ -1,0 +1,41 @@
+// main: style.css
+@import "style";
+.split-screen{
+    display: flex;
+    &-path{
+        width: 50%;
+        padding: 40px 0;
+        float: left;
+        display: flex;
+        justify-content: center;
+        &:nth-child(1){
+            background-color: rgb(133, 228, 231);
+        }
+        &:nth-child(2){
+            background-color: rgb(177, 218, 184);
+        }
+        &-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 100px;
+            }
+        }
+        &-text{
+            width: 300px;
+            margin-left: 25px;
+            p{
+                margin: 30px 0;
+            }
+        }
+    }
+    &-btn{
+        &-blue{
+            .btn(rgb(28, 139, 212), none, rgb(255, 255, 255));
+        }
+        &-green{
+            .btn(rgb(154, 205, 50), none, rgb(255, 255, 255));
+        }
+    }
+}

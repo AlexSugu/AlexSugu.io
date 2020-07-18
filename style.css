@@ -4,6 +4,17 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.Project {
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+    padding-bottom: 10px;
+}
+
 @media (max-width: 900px) {
     .maket {
         display: flex;
@@ -14,20 +25,25 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1200px) {
     .maket {
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+@media (min-width: 1200px) {
+    .maket {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         background-color: rgb(235, 235, 235);
     }
 }
 
 .maket-item {
     background-color: rgb(255, 255, 255);
-    margin: 20px 10px;
+    margin: 20px auto;
     width: 400px;
     color: rgb(65, 65, 65);
     text-align: center;

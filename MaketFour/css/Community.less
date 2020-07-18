@@ -1,0 +1,77 @@
+//main:style.css
+.Community{
+    background-image: url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 0 50px 50px rgb(255, 255, 255) inset;
+    text-align: center;
+    height: 600px;
+    &-head{
+        h1{
+            color: yellowgreen;
+        }
+        p{
+            width: 600px;
+            margin: 20px auto;
+        }
+    }
+    &-body{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            width: 450px;
+            &-message{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &-text{
+                    width: 400px;
+                    background-color: rgb(255, 255, 255);
+                    padding: 0 25px;
+                    padding-bottom: 25px;
+                    border-radius: 10px;
+                    margin-bottom: 40px;
+                    h2{
+                        margin-bottom: 20px;
+                    }
+    
+                    &::before{
+                        content: "";
+                        position: relative;
+                        height: 0;
+                        width: 0;
+                        top:200px;
+                        left: -100px;
+                        border-left: 0px solid transparent;
+                        border-right: 40px solid transparent;
+                        border-top: 40px solid #ffffff;
+                        
+                    }
+                    h2{
+                        color: yellowgreen;
+                    }
+                }
+                &-user{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    left: -45px;
+                    img{
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                    h3{
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
